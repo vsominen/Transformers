@@ -4,21 +4,15 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Transformer {
-    Map<TransformationType,Transform> transformer;
+    Map<TransformationType,Transform> map ;
     public Transformer(){
-        transformer = new HashMap<TransformationType, Transform>();
-        transformer.put(TransformationType.ReverseStringTransform, new ReverseStringTransform());
-        transformer.put(TransformationType.CaseChangeTransform, new CaseChangeTransform());
-        transformer.put(TransformationType.CharacterShift, new CharacterShift());
+       map = new HashMap<TransformationType,Transform>();
     }
-    public String transform(TransformationType[] forwardTransformOrder,String inputString)
+    public String transform()
     {
-        String outputString = new String(inputString);
-        for(TransformationType type : forwardTransformOrder) {
-            outputString = this.transformer.get(type).forwardTransform(outputString);
-            System.out.println("Interim forward transform = "+outputString);
-        }
-        return outputString;
+        String transformedOutputString ="";
+        
+        return transformedOutputString;
     }
 
 }
