@@ -38,6 +38,7 @@ public class CaseChangeTransform implements Transform {
             }
             result = transformedString.toString();
         }
+
         return result;
 
     }
