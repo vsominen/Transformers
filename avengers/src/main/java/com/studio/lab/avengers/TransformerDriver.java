@@ -11,13 +11,13 @@ public class TransformerDriver {
                 TransformationType.CaseChangeTransform,
                 TransformationType.CharacterShift };
         TransformationType[] order = new TransformationType[3];
+        String ch = "Y";
+        while (ch.equalsIgnoreCase("Y")) {
         System.out.println(
                 "Available Transformation \n 0 - ReverseString \n 1 - CaseChange \n 2 - CharacterShift");
         System.out.println(
                 "Enter the desired transformations in order by number, single space delimited: \n");
         Scanner cin = new Scanner(System.in);
-        String ch = "Y";
-        while (ch.equalsIgnoreCase("Y")) {
             for (int i = 0; i < 3; i++) {
                 order[i] = types[cin.nextInt()];
             }
