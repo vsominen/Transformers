@@ -27,6 +27,7 @@ public class TransformerDriver {
             order.add(types[cin.nextInt()]);
         }
             
+        
         System.out.println(
                     "Enter the text to transform, limit 2000 chars:\n");
         String input = cin.nextLine();
