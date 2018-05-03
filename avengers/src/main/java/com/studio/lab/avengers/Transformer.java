@@ -14,5 +14,4 @@ public class Transformer {
         
         return transformedOutputString;
     }
-
 }
