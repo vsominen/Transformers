@@ -7,8 +7,7 @@ public class ReverseStringTransform implements Transform {
 		StringBuilder sb = new StringBuilder();
 		sb.append(str);
 		sb = sb.reverse();
-		
-		
+
 		return sb.toString();
 	}
 
@@ -17,10 +16,9 @@ public class ReverseStringTransform implements Transform {
 		StringBuilder sbrev = new StringBuilder();
 		sbrev.append(str);
 		sbrev = sbrev.reverse();
-		
-		
+
 		return sbrev.toString();
-		
+
 	}
 
 }
